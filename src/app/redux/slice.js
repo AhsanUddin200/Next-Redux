@@ -6,10 +6,12 @@ const initialState = {
 }
 
 const Slice = createSlice({
+    name:"addUserSlice",
     initialState,
     //Here Create We Action (that add new  user taken id and name)
-    reducer : {
+    reducers : {
         addUser : (state,action)=>{
+            console.log(action)
             const data = {
                 id : nanoid(),
                 name : action.name
