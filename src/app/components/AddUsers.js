@@ -5,6 +5,7 @@ import {useDispatch} from 'react-redux'
 import Link from 'next/link';
 
 export default function AddUsers() {
+  
   const [name,setName] = useState("")
   const dispatch = useDispatch()
 
@@ -12,6 +13,7 @@ export default function AddUsers() {
   const userDispatch=()=>{
     //console.log(name);
     dispatch(addUser(name))
+    setName('')
 
   }
   return (
@@ -21,7 +23,7 @@ export default function AddUsers() {
         type="text"
         placeholder='Add New User'
         className='border p-3 gap-6 mt-6 block'
-      
+       value={name}
         onChange={(e)=>setName(e.target.value)}
       />
       <button onClick={userDispatch} className='bg-blue-500 text-white  mt-2  mb-8 block px-24'>Add Users</button>
