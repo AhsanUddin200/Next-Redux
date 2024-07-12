@@ -14,7 +14,7 @@ const Slice = createSlice({
             console.log(action)
             const data = {
                 id : nanoid(),
-                name : action.name
+                name : action.payload
             }
             state.users.push(data);
         }
