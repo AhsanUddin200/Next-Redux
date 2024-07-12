@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { addUser } from '../redux/slice';
 import {useDispatch} from 'react-redux'
+import Link from 'next/link';
 
 export default function AddUsers() {
   const [name,setName] = useState("")
@@ -24,6 +25,7 @@ export default function AddUsers() {
         onChange={(e)=>setName(e.target.value)}
       />
       <button onClick={userDispatch} className='bg-blue-500 text-white  mt-2  mb-8 block px-24'>Add Users</button>
+      <Link href="/removeuser" className='block mt-6 underline'>Remove User</Link>
     </div>
   );
 }
