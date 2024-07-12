@@ -18,7 +18,7 @@ const Slice = createSlice({
             }
             
             state.users.push(data);
-
+//Here We Are Store Data in local storage
             let userData = JSON.stringify(current(state.users))
             localStorage.setItem("users",userData);
             console.log(current(state.users))
