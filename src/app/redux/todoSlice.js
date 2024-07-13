@@ -12,6 +12,7 @@ const Slice = createSlice ({
 
     reducers : {
         addTodos : (state,action)=>{
+         //   console.log(action)
             const data = {
                 id:nanoid,
                 name:action.payload

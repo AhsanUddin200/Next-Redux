@@ -28,6 +28,7 @@ export default function AddUsers() {
       />
       <button onClick={userDispatch} className='bg-blue-500 text-white  mt-2  mb-8 block px-24'>Add Users</button>
       <Link href="/removeuser" className='block mt-6 underline'>Remove User</Link>
+      <Link href="/todolist" className='block mt-6 underline'>Go to todo list</Link>
     </div>
   );
 }
