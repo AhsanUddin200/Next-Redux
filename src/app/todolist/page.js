@@ -28,7 +28,7 @@ export default function page() {
         <h3 className='mt-4  font-bold'>ToDo List</h3>
        {
         todoData.length && todoData.map((item)=>(
-            <h5 className='font-mono text-xl mt-2 px-8'>{item.name}</h5>
+            <h5 key={item.id} className='font-mono text-xl mt-2 px-8'>{item.name}</h5>
         ))
        }
         </div>

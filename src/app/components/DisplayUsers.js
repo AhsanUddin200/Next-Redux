@@ -13,7 +13,7 @@ export default function displayUsers() {
     <div className="w-3/5  px-6 mt-12 h-full  border border-gray-600 overflow-scroll">
       <h2 className="mt-8 px-8 font-bold text-2xl">Display Here Users List</h2>
       {userData.map((item) => (
-        <div className=" flex  justify-between px-8 w-12 mt-4 rounded-lg">
+        <div key={item.id} className=" flex  justify-between px-8 w-12 mt-4 rounded-lg">
           <ul className=" bg-sky-300 flex-grow mr-4 px-6">
             <li> {item.name}</li>
           </ul>

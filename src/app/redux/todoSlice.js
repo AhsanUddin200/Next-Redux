@@ -14,7 +14,7 @@ const Slice = createSlice ({
         addTodos : (state,action)=>{
          //   console.log(action)
             const data = {
-                id:nanoid,
+                id:nanoid(),
                 name:action.payload
             }
             state.todos.push(data)

@@ -45,7 +45,7 @@ const Slice = createSlice({
       });
 
       state.users = data;
-      let userData = JSON.stringify(state.users);
+      let userData = JSON.stringify(data);
       localStorage.removeItem("users", userData);
     },
   },
